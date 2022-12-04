@@ -1,7 +1,6 @@
 #pragma once
 
 #include "config.h"
-
 #include "Core/RunModes/RunMode.h"
 
 #define RUNMODE_MAIN 0
