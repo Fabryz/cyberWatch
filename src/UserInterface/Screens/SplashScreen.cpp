@@ -41,6 +41,7 @@ void SplashScreen::renderLoadingBar() {
 			10,
 			COLOR_MAIN_1
 		);
+		
 		delay(25);
 	}
 }
