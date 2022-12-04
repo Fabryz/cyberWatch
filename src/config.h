@@ -4,8 +4,8 @@
 
 #define LILYGO_WATCH_2020_V3
 
-#define APP_FULL_NAME "CyberWatch 1.0"
-#define APP_NAME "CyberWatch"
+#define APP_FULL_NAME "Fabry'z\nCyberWatch 1.0"
+#define APP_NAME "Fabry'z\nCyberWatch"
 #define APP_VERSION "1.0"
 
 #define BATTERY_LOW 30
@@ -13,7 +13,7 @@
 
 #define CPU_FREQUENCY_LOW 20
 #define CPU_FREQUENCY_HIGH 240
-#define CROSS_SWIPE_TOLERANCE 12
+#define CROSS_SWIPE_TOLERANCE 24
 
 #define COLOR_BACKGROUND 0x0000
 
