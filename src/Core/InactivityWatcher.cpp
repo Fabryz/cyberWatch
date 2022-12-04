@@ -42,7 +42,7 @@ void InactivityWatcher::checkAndMarkIfOnHand() {
 			this->lastOnHandActivity = TimeUtil::getCurrentTimeInSeconds();
 			sensorChanged = true;
 		}
-		this->prevOnHandState = sensorChanged ||  ((this->lastOnHandActivity + INACTIVITY_ONHAMD_TRESHOLD) > TimeUtil::getCurrentTimeInSeconds());
+		this->prevOnHandState = sensorChanged ||  ((this->lastOnHandActivity + INACTIVITY_ONHAND_TRESHOLD) > TimeUtil::getCurrentTimeInSeconds());
 	}
 }
 
