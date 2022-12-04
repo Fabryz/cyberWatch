@@ -113,13 +113,13 @@ void MainMode::sleep() {
 	esp_light_sleep_start();
 }
 
-void MainMode::handleCabelConnection() {
+void MainMode::handleCableConnection() {
 	if (
-		BatteryManager::getInstance()->handleCabelPlugInIRQ() == true
-		|| BatteryManager::getInstance()->handleCabelPlugRemoveIRQ() == true
+		BatteryManager::getInstance()->handleCablePlugInIRQ() == true
+		|| BatteryManager::getInstance()->handleCablePlugRemoveIRQ() == true
 	) {
 		SystemInfo::getInstance()->setPlugState(
-			!BatteryManager::getInstance()->handleCabelPlugRemoveIRQ()
+			!BatteryManager::getInstance()->handleCablePlugRemoveIRQ()
 		);
 		EventManager::getInstance()->fireEvent(EVENT_CABLE_PLUG);
 	}
@@ -131,7 +131,7 @@ void MainMode::handleEsp32IRQ(bool &PEKshort) {
 		if (TTGOClass::getWatch()->power->isPEKLongtPressIRQ() == true) {
 			this->turnOff();
 		}
-		this->handleCabelConnection();
+		this->handleCableConnection();
 		if (TTGOClass::getWatch()->power->isPEKShortPressIRQ() == true) {
 			PEKshort = true;
 		}

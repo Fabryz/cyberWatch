@@ -121,14 +121,14 @@ void ChargingMode::handleEsp32IRQ() {
 		if (TTGOClass::getWatch()->power->isPEKLongtPressIRQ() == true) {
 			CyberWatch::getInstance()->setRunMode(RUNMODE_MAIN);
 		}
-		this->handleCabelConnection();
+		this->handleCableConnection();
 		Esp32::getInstance()->cleanIRQ();
 	}
 }
 
-void ChargingMode::handleCabelConnection() {
+void ChargingMode::handleCableConnection() {
 	if (
-		BatteryManager::getInstance()->handleCabelPlugRemoveIRQ() == true
+		BatteryManager::getInstance()->handleCablePlugRemoveIRQ() == true
 	) {
 		TTGOClass::getWatch()->shutdown();
 	}

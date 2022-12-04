@@ -45,14 +45,14 @@ bool BatteryManager::isCharging() {
 	return TTGOClass::getWatch()->power->isChargeing();
 }
 
-bool BatteryManager::handleCabelPlugInIRQ() {
+bool BatteryManager::handleCablePlugInIRQ() {
 	return (
 		TTGOClass::getWatch()->power->isVbusPlugInIRQ()
 		|| TTGOClass::getWatch()->power->isAcinPlugInIRQ()
 	);
 }
 
-bool BatteryManager::handleCabelPlugRemoveIRQ() {
+bool BatteryManager::handleCablePlugRemoveIRQ() {
 	return (
 		TTGOClass::getWatch()->power->isVbusRemoveIRQ()
 		|| TTGOClass::getWatch()->power->isAcinRemoveIRQ()

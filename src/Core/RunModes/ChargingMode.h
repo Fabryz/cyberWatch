@@ -22,7 +22,7 @@ class ChargingMode : public RunMode {
 
 		void renderDateTime();
 
-		void handleCabelConnection();
+		void handleCableConnection();
 
 		void handleEsp32IRQ();
 

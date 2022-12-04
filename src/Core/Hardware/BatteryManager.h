@@ -12,9 +12,9 @@ class BatteryManager {
 
 		bool isCharging();
 
-		bool handleCabelPlugInIRQ();
+		bool handleCablePlugInIRQ();
 
-		bool handleCabelPlugRemoveIRQ();
+		bool handleCablePlugRemoveIRQ();
 
 		void energyConsumptionSavingsSettings();
 

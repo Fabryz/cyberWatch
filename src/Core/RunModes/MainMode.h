@@ -11,7 +11,7 @@ class MainMode : public RunMode {
 		void loop();
 
 	protected:
-		void handleCabelConnection();
+		void handleCableConnection();
 
 		void handleEsp32IRQ(bool &PEKshort);
 
